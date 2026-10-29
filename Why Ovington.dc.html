@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/styles.css">
+<script src="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root { --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif; --font-body: 'Plus Jakarta Sans', system-ui, sans-serif; --font-heading-weight: 600; --color-bg: #f2efea; --color-accent-2: oklch(0.58 0.035 220); --color-accent-2-100: oklch(0.955 0.008 220); --color-accent-2-200: oklch(0.91 0.014 220); --color-accent-2-300: oklch(0.84 0.022 220); --color-accent-2-400: oklch(0.72 0.03 220); --color-accent-2-500: oklch(0.58 0.035 220); --color-accent-2-600: oklch(0.5 0.035 220); --color-accent-2-700: oklch(0.42 0.032 220); --color-accent-2-800: oklch(0.35 0.028 220); --color-accent-2-900: oklch(0.28 0.022 220); }
+h1, h2, h3, blockquote { color: #2f4247; letter-spacing: -0.02em; }
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: clip; text-wrap: pretty; background: var(--color-bg); }
+a { color: var(--color-accent-700); text-decoration: none; }
+a:hover { color: var(--color-accent-800); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--color-text);">
+
+<nav class="nav" style="position: sticky; top: 0; z-index: 50; background: {{ navBg }}; -webkit-backdrop-filter: saturate(1.4) blur(16px); backdrop-filter: saturate(1.4) blur(16px); box-shadow: {{ navShadow }}; transition: background 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease; padding-block: {{ navPad }}; padding-inline: max(clamp(20px,5vw,72px), calc((100% - 1200px)/2 + clamp(20px,5vw,72px))); flex-wrap: wrap; gap: var(--space-4);">
+  <a href="Home.dc.html" class="nav-brand" style="display: flex; align-items: center; text-decoration: none;"><img src="assets/ovington-logo-black.png" alt="Ovington Capital Partners" style="height: 36px; width: auto; display: block;"></a>
+  <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; margin-left: auto;">
+    <a href="About.dc.html">About</a>
+    <a href="Investment%20Thesis.dc.html">Investment Thesis</a>
+    <a href="Why%20Ovington.dc.html" style="font-weight: 700; color: var(--color-text);">Why Ovington</a>
+    <a href="Portfolio.dc.html">Portfolio</a>
+    <a href="Home.dc.html#team">Team</a>
+    <a href="Home.dc.html#insights">Insights</a>
+    <a href="Home.dc.html#contact" class="btn btn-primary" style="text-decoration: none;">Investor enquiries</a>
+  </div>
+</nav>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px,5vw,72px);">
+
+  <section data-screen-label="Why hero" style="position: relative; padding: clamp(56px,9vw,120px) 0 clamp(40px,6vw,80px);">
+    <div style="position: absolute; right: -80px; top: -60px; width: 320px; height: 320px; border-radius: 50%; background: var(--color-accent-2-200); z-index: 0; pointer-events: none;"></div>
+    <div style="position: relative; display: flex; flex-direction: column; gap: var(--space-6);">
+      <span class="tag tag-accent" style="align-self: flex-start;">Why India · Why now · Why Ovington</span>
+      <h1 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(40px,5.4vw,70px); line-height: 1.04; letter-spacing: -0.035em; margin: 0; max-width: 16ch;">Connecting European capital to India's secular growth.</h1>
+      <p style="font-size: 18px; line-height: 1.65; max-width: 58ch; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent);">India's scale, young population and digital infrastructure are expanding domestic demand, while deeper capital markets and the diversification of global supply chains strengthen its companies' ability to compete internationally.</p>
+    </div>
+  </section>
+
+  <section data-screen-label="India in numbers" style="padding: clamp(24px,4vw,56px) 0 clamp(56px,7vw,96px);">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: var(--space-6);">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+        <div style="background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: clamp(24px,3vw,36px); display: flex; flex-direction: column; gap: var(--space-2);">
+          <div style="font-family: var(--font-heading); font-weight: 600; letter-spacing: -0.03em; font-size: clamp(40px,4vw,56px); line-height: 1; color: var(--color-accent-700);">{{ s.num }}</div>
+          <div style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; margin-top: var(--space-2);">{{ s.label }}</div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: color-mix(in srgb, var(--color-text) 82%, transparent);">{{ s.body }}</p>
+          <span style="font-size: 12px; color: color-mix(in srgb, var(--color-text) 70%, transparent); margin-top: auto; padding-top: var(--space-2);">{{ s.src }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section data-screen-label="Five arenas" style="padding: clamp(56px,7vw,96px) 0;">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">The public market landscape</span>
+    <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-3); max-width: 24ch;">Five arenas of structural growth.</h2>
+    <p style="margin: 0 0 var(--space-8); font-size: 17px; line-height: 1.65; max-width: 62ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">The principal economic transformations that emerge from India's remaining development needs. Government policy and private investment are increasingly directed toward these same areas, producing growth trends that can persist well beyond the normal economic cycle.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: var(--space-4);">
+      <sc-for list="{{ arenas }}" as="a" hint-placeholder-count="5">
+        <div style="flex: 1 1 200px; border-radius: 999px; padding: var(--space-6); text-align: center; background: {{ a.bg }}; display: flex; flex-direction: column; gap: var(--space-1);">
+          <span style="font-weight: 700; font-size: 18px; color: #2f4247;">{{ a.name }}</span>
+          <span style="font-size: 13px; font-weight: 600;">{{ a.note }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin: var(--space-6) 0 0; font-size: 14px; line-height: 1.6; max-width: 70ch; color: color-mix(in srgb, var(--color-text) 75%, transparent);">The public sleeve's primary thematic preferences are industrialization and electrification, with ongoing monitoring across all five arenas. Complete deep-dives available on request.</p>
+  </section>
+
+
+  <section data-screen-label="Value creation" style="padding: clamp(56px,7vw,96px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(32px,5vw,80px); align-items: start;">
+    <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+      <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">Value creation model</span>
+      <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0;">Value beyond capital.</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.65; max-width: 42ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">As a long-term holding company, Ovington seeks to add value beyond capital by connecting portfolio companies with relevant expertise, networks and market opportunities across India and Europe.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+      <sc-for list="{{ value }}" as="v" hint-placeholder-count="5">
+        <div style="display: grid; grid-template-columns: 48px minmax(0,1fr); gap: var(--space-4); align-items: start; background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: var(--space-6);">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-accent-100); color: var(--color-accent-800); display: grid; place-items: center; font-weight: 700; font-size: 18px;">{{ v.n }}</div>
+          <div>
+            <h3 style="margin: 0 0 var(--space-1); font-size: 17px; font-weight: 700;">{{ v.title }}</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 82%, transparent);">{{ v.body }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+
+  <section style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="background: var(--color-accent-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(32px,5vw,64px); display: flex; justify-content: space-between; align-items: center; gap: var(--space-6); flex-wrap: wrap;">
+      <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px,3vw,38px); line-height: 1.15; margin: 0; max-width: 24ch;">Interested in joining the holding as a partner?</h2>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+        <a href="Home.dc.html#contact" class="btn btn-primary" style="text-decoration: none;">Investor enquiries →</a>
+        <a href="Portfolio.dc.html" class="btn btn-ghost" style="text-decoration: none;">See the portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: var(--space-8) 0; display: flex; flex-direction: column; gap: var(--space-4); font-size: 13px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 72%, transparent);">
+    <div style="display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; align-items: baseline;">
+      <img src="assets/ovington-logo-black.png" alt="Ovington Capital Partners" style="height: 28px; width: auto;">
+      <span>Copyright © 2026 Ovington Capital Partners. All rights reserved.</span>
+    </div>
+    <p style="margin: 0; max-width: 90ch;">This website does not constitute an offer to sell or a solicitation of an offer to subscribe to any securities or investment products. Any investment in Ovington Capital Partners is subject to comprehensive due diligence, definitive subscription documentation, and applicable regulatory approval under Luxembourg law.</p>
+  </footer>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() { this._onScroll = () => { const s = window.scrollY > 24; if (s !== !!this.state.scrolled) this.setState({ scrolled: s }); }; window.addEventListener('scroll', this._onScroll, { passive: true }); this._onScroll(); }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+
+  renderVals() {
+    return { navBg: this.state && this.state.scrolled ? 'color-mix(in srgb, #f2efea 86%, transparent)' : 'transparent', navShadow: this.state && this.state.scrolled ? '0 1px 0 color-mix(in srgb, #13262c 10%, transparent), 0 8px 24px -12px color-mix(in srgb, #13262c 28%, transparent)' : 'none', navPad: this.state && this.state.scrolled ? '10px' : '18px', 
+      stats: [
+        { num: '$6.2T', label: 'Projected GDP by 2030', body: "India's expanding economy creates a larger domestic market for businesses.", src: 'IMF, April 2026 WEO' },
+        { num: '3rd', label: 'Largest startup ecosystem', body: 'Over 200,000 government-recognized startups across a broad range of industries.', src: 'Government of India, January 2026' },
+        { num: '29.2', label: 'Median age, 2026', body: "Half the population is younger than 29.2, highlighting India's youthful demographic profile.", src: 'UN World Population Prospects' },
+        { num: '24B+', label: 'Monthly digital payments', body: 'Digital infrastructure operating at mass scale.', src: 'NPCI, August 2026' }
+      ],
+      arenas: [
+        { name: 'Build Physical India', note: 'Multi-year appeal: High', bg: 'var(--color-surface)' },
+        { name: 'Industrialize India', note: 'Multi-year appeal: Very High', bg: 'var(--color-accent-200)' },
+        { name: 'Electrify India', note: 'Multi-year appeal: Very High', bg: 'var(--color-accent-200)' },
+        { name: 'Finance & Formalize India', note: 'Multi-year appeal: High–Very High', bg: 'var(--color-surface)' },
+        { name: 'Consume & Digitize India', note: 'Multi-year appeal: Medium–High', bg: 'var(--color-surface)' }
+      ],
+      publicCase: [
+        { title: 'Secular visibility', body: 'Exposed to multi-year investment requirements rather than a single cyclical rebound: a long-duration thesis that persists beyond normal business cycles.' },
+        { title: 'Multiple demand engines', body: 'Private industrial capex, public infrastructure investment, manufacturing localization, FDI and rising electricity requirements.' },
+        { title: 'Broad selection universe', body: 'From industrial equipment and automation to electrical systems, grid infrastructure and power technologies.' },
+        { title: 'Exposure not otherwise available', body: "Broad Indian indices minimally represent the production growth opportunity. A dedicated strategy offers more direct exposure to the build-out." }
+      ],
+      value: [
+        { n: '1', title: 'Cross-border positioning', body: "Helping Indian and Indian-origin founders access European capital, customers, regulatory knowledge and corporate partners." },
+        { n: '2', title: 'Operating network', body: 'Access to Indian-origin executives, operators, founders and domain experts across technology, finance, healthcare and enterprise.' },
+        { n: '3', title: 'Europe expansion engine', body: 'Luxembourg-anchored support for portfolio companies entering EU markets.' },
+        { n: '4', title: 'Institutional partnerships', body: 'India ecosystem access through SINE IIT Bombay, IIT Madras Research Park, T-Hub and other founder networks.' },
+        { n: '5', title: 'Listed-market intelligence', body: 'Public-market signals support private-market valuation, timing and sector conviction.' }
+      ],
+      risks: [
+        { title: 'Public sleeve', bg: 'var(--color-accent-2-100)', ret: 'Growth anchored in valuation discipline. Top-down and bottom-up research to find companies compounding earnings through structural trends. Long-term, semi-activist buy & hold.', risk: 'No leverage. Single-stock concentration monitored. A 1.6× 99% historical VaR ratio ceiling against the NIFTY 500, plus historical scenario stress testing.' },
+        { title: 'Private sleeve', bg: 'var(--color-accent-100)', ret: 'Focus on asymmetric upside. Performance assessed on realized cash returns, not only unrealized valuation gains. Exits via strategic M&A, secondary sales, sponsor-to-sponsor transfers and selective IPOs.', risk: 'Multi-gate diligence with deeper founder and operating due diligence, reflecting dispersed founder quality across a large ecosystem.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

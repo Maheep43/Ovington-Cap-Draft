@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/styles.css">
+<script src="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: clip; text-wrap: pretty; background: var(--color-bg); }
+a { color: var(--color-accent-700); text-decoration: none; }
+a:hover { color: var(--color-accent-800); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--color-text);">
+
+<nav class="nav" style="position: sticky; top: 0; z-index: 10; padding-inline: max(clamp(20px,5vw,72px), calc((100% - 1200px)/2 + clamp(20px,5vw,72px))); flex-wrap: wrap; gap: var(--space-4);">
+  <span class="nav-brand">Ovington Capital Partners</span>
+  <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; margin-left: auto;">
+    <a href="#focus">Focus</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#ecosystem">Ecosystem</a>
+    <a href="#team">Team</a>
+    <a href="#events">Events</a>
+    <a href="#insights">Insights</a>
+    <a href="#contact" class="btn btn-primary" style="text-decoration: none;">Contact</a>
+  </div>
+</nav>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px,5vw,72px);">
+
+  <!-- Hero -->
+  <section data-screen-label="Hero" style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(32px,5vw,80px); align-items: center; padding: clamp(56px,9vw,120px) 0 clamp(56px,7vw,96px);">
+    <div style="position: absolute; left: -120px; top: -40px; width: 380px; height: 380px; border-radius: 50%; background: var(--color-accent-2-200); z-index: 0; pointer-events: none;"></div>
+    <div style="position: relative;">
+      <div style="display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-6);">
+        <span class="tag tag-accent-2">Luxembourg</span>
+        <span class="tag tag-accent-2">Milan</span>
+        <span class="tag tag-accent-2">India</span>
+      </div>
+      <h1 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(42px,6vw,78px); line-height: 1.06; margin: 0;">
+        <span style="display: block;">Where global capital</span>
+        <span style="display: block;">meets <span style="color: var(--color-accent);">Indian innovation.</span></span>
+      </h1>
+      <p style="font-size: 18px; line-height: 1.65; max-width: 54ch; margin: var(--space-6) 0 0; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Ovington Capital Partners is a Luxembourg-domiciled investment and advisory platform founded by a multidisciplinary team combining investment, governance, venture building, and cross-border operating experience. We operate at the intersection of European institutional capital and India's world-class innovation economy.</p>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-8);">
+        <a href="#focus" class="btn btn-primary" style="text-decoration: none;">Our investment focus</a>
+        <a href="#team" class="btn btn-ghost" style="text-decoration: none;">Meet the team</a>
+      </div>
+    </div>
+    <sc-if value="{{ showHeroImage }}" hint-placeholder-val="{{ true }}">
+      <div class="washed" style="width: 100%; aspect-ratio: 4 / 5; max-width: 460px; justify-self: end; border-radius: 240px 240px var(--radius-lg) var(--radius-lg); overflow: hidden;">
+        <image-slot id="hero-photo" shape="rect" src="https://highwebsolutions.com/ovington-capital/images/demo-2/about-02.jpg" placeholder="Hero photograph"></image-slot>
+      </div>
+    </sc-if>
+  </section>
+
+  <!-- Quote -->
+  <section data-screen-label="Philosophy" style="padding: clamp(40px,6vw,80px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--space-8); align-items: end;">
+    <blockquote style="margin: 0; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.6vw,46px); line-height: 1.15; max-width: 18ch;">“Capital today is abundant. Great founders are not.”</blockquote>
+    <p style="margin: 0; font-size: 18px; line-height: 1.65; max-width: 44ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Our role is to identify exceptional entrepreneurs early, support them with disciplined capital and strategic access, and help them scale globally.</p>
+  </section>
+
+  <!-- Focus -->
+  <section id="focus" data-screen-label="Investment Focus" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Investment focus</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-8);">Two ways into India's growth.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: var(--space-6);">
+      <div style="background: var(--color-accent-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(28px,4vw,48px); display: flex; flex-direction: column; gap: var(--space-4);">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px;">01</div>
+        <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 28px; margin: 0;">Private Markets India</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65;">Seed to Series A investments in founders building globally relevant businesses in AI, deep tech, enterprise software, climate, and advanced manufacturing.</p>
+        <div style="display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: auto; padding-top: var(--space-3);">
+          <span class="tag tag-outline">AI</span><span class="tag tag-outline">Deep tech</span><span class="tag tag-outline">Enterprise software</span><span class="tag tag-outline">Climate</span><span class="tag tag-outline">Advanced manufacturing</span>
+        </div>
+      </div>
+      <div style="background: var(--color-accent-2-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(28px,4vw,48px); display: flex; flex-direction: column; gap: var(--space-4);">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent-2); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px;">02</div>
+        <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 28px; margin: 0;">Public Markets India</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.65;">A disciplined listed-equity allocation providing liquidity, valuation intelligence, and market timing across Indian public markets.</p>
+        <div style="display: flex; gap: var(--space-2); flex-wrap: wrap; margin-top: auto; padding-top: var(--space-3);">
+          <span class="tag tag-outline">Liquidity</span><span class="tag tag-outline">Valuation intelligence</span><span class="tag tag-outline">Market timing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" data-screen-label="Portfolio" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Portfolio</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-3); max-width: 22ch;">Building alongside ambitious companies.</h2>
+    <p style="margin: 0 0 var(--space-8); font-size: 17px; line-height: 1.65; max-width: 52ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Companies shaping the future across healthcare, technology, and beyond.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: var(--space-6);">
+      <sc-for list="{{ portfolio }}" as="co" hint-placeholder-count="2">
+        <a href="{{ co.url }}" target="_blank" class="card elev-sm" style="display: grid; grid-template-columns: 96px minmax(0,1fr); gap: var(--space-6); align-items: start; color: var(--color-text); text-decoration: none; border-radius: calc(2 * var(--radius-lg));" style-hover="box-shadow: var(--shadow-md);">
+          <div style="width: 96px; height: 96px; border-radius: 50%; overflow: hidden; background: var(--color-bg);">
+            <image-slot id="{{ co.slot }}" shape="circle" fit="contain" src="{{ co.logo }}" placeholder="Logo"></image-slot>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+            <span class="card-kicker">{{ co.stage }}</span>
+            <h3 class="card-title" style="margin: 0;">{{ co.name }} ↗</h3>
+            <p class="card-body" style="margin: 0;">{{ co.desc }}</p>
+            <span class="card-meta">{{ co.sector }}</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section id="ecosystem" data-screen-label="Ecosystem" style="padding: clamp(56px,7vw,96px) 0 var(--space-8); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(32px,5vw,80px); align-items: start;">
+    <div>
+      <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Innovation ecosystem</span>
+      <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-4);">The institutions we work alongside.</h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.65; max-width: 40ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">We work alongside the institutions building the future of European and Indian innovation.</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+      <sc-for list="{{ ecosystem }}" as="e" hint-placeholder-count="6">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); flex-wrap: wrap; background: var(--color-surface); border-radius: 999px; padding: var(--space-4) var(--space-6);">
+          <span style="font-weight: 600; font-size: 16px;">{{ e.name }}</span>
+          <span class="tag {{ e.tagClass }}">{{ e.place }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" data-screen-label="Team" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Team</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-8); max-width: 24ch;">European institutional depth, Indian market fluency.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: var(--space-8) var(--space-6); align-items: start;">
+      <sc-for list="{{ team }}" as="p" hint-placeholder-count="5">
+        <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+          <div class="washed" style="width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; max-width: 240px;">
+            <image-slot id="{{ p.slot }}" shape="circle" src="{{ p.photo }}" placeholder="Portrait"></image-slot>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; margin: var(--space-2) 0 var(--space-1);">{{ p.name }}</h3>
+            <span style="font-size: 14px; font-weight: 600; color: var(--color-accent-2-700);">{{ p.role }}</span>
+          </div>
+          <sc-if value="{{ p.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 82%, transparent);">{{ p.bio }}</p>
+          </sc-if>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <button type="button" class="btn btn-secondary" onClick="{{ p.toggle }}">{{ p.toggleLabel }}</button>
+            <a href="{{ p.linkedin }}" target="_blank" class="btn btn-ghost" style="text-decoration: none;">LinkedIn ↗</a>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Footprint -->
+  <section data-screen-label="Footprint" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="background: var(--color-accent-2-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(32px,5vw,64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--space-8); align-items: center;">
+      <div>
+        <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-2-800); margin-bottom: var(--space-3);">Global footprint</span>
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(28px,3vw,40px); line-height: 1.15; margin: 0;">A Luxembourg headquarters, an on-ground presence across India.</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+        <div style="display: flex; gap: var(--space-4); align-items: center;">
+          <div style="flex: none; width: 48px; height: 48px; border-radius: 50%; background: var(--color-accent);"></div>
+          <div><div style="font-weight: 700; font-size: 17px;">Luxembourg · Headquarters</div><div style="font-size: 15px; color: var(--color-accent-2-900);">53 Boulevard Royal, L-2449 Luxembourg</div></div>
+        </div>
+        <div style="display: flex; gap: var(--space-4); align-items: center;">
+          <div style="flex: none; width: 48px; height: 48px; border-radius: 50%; background: var(--color-accent-300);"></div>
+          <div style="font-weight: 700; font-size: 17px;">Milan</div>
+        </div>
+        <div style="display: flex; gap: var(--space-4); align-items: center;">
+          <div style="flex: none; width: 48px; height: 48px; border-radius: 50%; background: var(--color-accent-2);"></div>
+          <div style="font-weight: 700; font-size: 17px;">India</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section id="events" data-screen-label="Events" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Conferences &amp; events</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-3);">On the institutional calendar.</h2>
+    <p style="margin: 0 0 var(--space-8); font-size: 17px; line-height: 1.65; max-width: 52ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Ovington is active across the European and Indian institutional calendar.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr)); gap: var(--space-6);">
+      <sc-for list="{{ events }}" as="ev" hint-placeholder-count="5">
+        <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+          <div class="washed" style="width: 100%; aspect-ratio: 4 / 5; border-radius: calc(2 * var(--radius-lg)); overflow: hidden;">
+            <image-slot id="{{ ev.slot }}" shape="rect" src="{{ ev.img }}" placeholder="Event photo"></image-slot>
+          </div>
+          <span class="card-kicker">{{ ev.when }}</span>
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 21px; line-height: 1.2; margin: 0;">{{ ev.name }}</h3>
+          <span style="font-size: 15px; color: color-mix(in srgb, var(--color-text) 75%, transparent);">{{ ev.city }}</span>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section id="insights" data-screen-label="Insights" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="display: flex; justify-content: space-between; align-items: end; gap: var(--space-6); flex-wrap: wrap; margin-bottom: var(--space-8);">
+      <div>
+        <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Insights</span>
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(28px,3vw,40px); line-height: 1.15; margin: 0; max-width: 26ch;">Perspectives on European capital, Indian innovation, and the corridor between them.</h2>
+      </div>
+      <a href="#" class="btn btn-secondary" style="text-decoration: none;">View all →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--space-6);">
+      <sc-for list="{{ insights }}" as="a" hint-placeholder-count="3">
+        <a href="#" class="card" style="display: flex; flex-direction: column; gap: var(--space-3); color: var(--color-text); text-decoration: none; border-radius: calc(2 * var(--radius-lg));" style-hover="box-shadow: var(--shadow-md);">
+          <span class="tag tag-accent" style="align-self: flex-start;">{{ a.date }}</span>
+          <h3 class="card-title" style="margin: 0;">{{ a.title }}</h3>
+          <p class="card-body" style="margin: 0;">{{ a.desc }}</p>
+          <span class="card-meta" style="margin-top: auto;">By OCP Research</span>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-screen-label="Contact" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="background: var(--color-accent-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(32px,5vw,64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(32px,5vw,64px);">
+      <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0;">Get support from our team.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; max-width: 40ch;">Our experienced team is here to help you navigate opportunities, make informed decisions, and move your vision forward.</p>
+        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-3);">
+          <span class="card-kicker">Email us</span>
+          <a href="mailto:info@ovingtoncap.ai" style="font-size: 18px; font-weight: 600;">info@ovingtoncap.ai</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+          <span class="card-kicker">Location</span>
+          <span style="font-size: 16px;">53 Boulevard Royal, L-2449 Luxembourg</span>
+        </div>
+      </div>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <div style="background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-3); justify-content: center;">
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; margin: 0;">Thank you.</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6;">Your message is on its way. We'll be in touch shortly.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ onSubmit }}" style="display: flex; flex-direction: column; gap: var(--space-4);">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: var(--space-4);">
+            <div class="field"><label>Name</label><input class="input" type="text" required="required"></div>
+            <div class="field"><label>Email</label><input class="input" type="email" required="required"></div>
+          </div>
+          <div class="field"><label>Subject</label><input class="input" type="text"></div>
+          <div class="field"><label>Message</label><textarea class="input" rows="5" style="border-radius: var(--radius-lg); resize: vertical; font: inherit;"></textarea></div>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send message</button>
+        </form>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer style="padding: var(--space-8) 0; display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; font-size: 14px; color: color-mix(in srgb, var(--color-text) 72%, transparent);">
+    <span style="font-family: var(--font-heading); font-size: 18px; color: var(--color-text);">Ovington Capital Partners</span>
+    <span>Copyright © 2026 Ovington Capital Partners. All rights reserved.</span>
+  </footer>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroImage&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;bios&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;collapsed&quot;,&quot;expanded&quot;],&quot;default&quot;:&quot;collapsed&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  state = { open: {}, sent: false };
+  renderVals() {
+    const img = 'https://highwebsolutions.com/ovington-capital/images/';
+    const expanded = this.props.bios === 'expanded';
+    const team = [
+      ['Marco Palacino','Managing Director','team-01','https://www.linkedin.com/in/marco-palacino-4715681a/',"Marco brings over thirty years of experience across asset management, private credit, real estate, and venture capital. He previously served as Country Head for Italy at BNY Mellon Investment Management, where he led institutional client relationships and product development across Southern Europe. His career has spanned senior roles at global asset managers, private banks, and alternative investment firms, giving him a rare view across the full spectrum of European institutional capital."],
+      ['Himanshu Upadhyay','Director, Luxembourg','assets/team-himanshu.png','https://www.linkedin.com/in/himanshu1512/',"Himanshu brings more than twenty years of leadership experience across insurance, financial services, strategy, product, and risk management, spanning Europe and Asia-Pacific. He currently holds a senior leadership role at Foyer Group, one of Luxembourg's largest financial institutions, where he has led cross-border initiatives, product innovation, and enterprise risk. His combination of European institutional depth and Asian market fluency is central to Ovington's positioning at the Europe–India corridor."],
+      ['Pranjul Shah','Director, Luxembourg','team-03','https://www.linkedin.com/in/pranjulshah/',"Pranjul serves as Head of Incubator at the University of Luxembourg and is a faculty member of the MIT LinQ Catalyst Program. He is a central architect of Luxembourg's entrepreneurship acceleration ecosystem and has advised founders, universities, and government bodies across Europe on deep-tech commercialisation. At Ovington, Pranjul anchors the firm's innovation ecosystem strategy and its academic and research partnerships."],
+      ['Elisabetta Luppi','Director & Senior Corporate Officer','team-04','https://www.linkedin.com/in/elisabetta-luppi-371140335/',"Elisabetta brings deep expertise in business administration, corporate affairs, and compliance, developed over a career spanning Luxembourg's regulated financial services sector. She serves as the operational and governance backbone of the firm, overseeing regulatory alignment, corporate secretarial function, and the institutional standards that define a Luxembourg investment house."],
+      ['Maheep Sidhu','Investment Analyst','team-05','https://www.linkedin.com/in/maheep-sidhu-5a7578160/',"Maheep leads investment analysis and business development at Ovington, with a focus on deal sourcing, valuation, and investor relations across the Europe–India corridor. He brings experience across financial consulting, wealth management research at BGL BNP Paribas, and cross-border venture capital. He works closely with India's leading innovation ecosystems, including SINE at IIT Bombay, to build the firm's proprietary deal pipeline."]
+    ].map(([name, role, f, linkedin, bio], i) => {
+      const open = expanded || !!this.state.open[i];
+      return { name, role, linkedin, bio, open, slot: 'team-' + i, photo: f.includes('/') ? f : img + 'team/' + f + '.jpg',
+        toggleLabel: open ? 'Hide bio' : 'Read bio',
+        toggle: () => this.setState(s => ({ open: { ...s.open, [i]: !open } })) };
+    });
+    return {
+      showHeroImage: this.props.heroImage ?? true,
+      team,
+      portfolio: [
+        { name: 'Plenome Technologies', stage: 'Seed', sector: 'Healthcare · Digital infrastructure', url: 'https://plenome.com/', slot: 'logo-plenome', logo: img + 'plenome-logo.jpg',
+          desc: 'Incubated at IIT Madras, Plenome builds secure, intelligent digital infrastructure for healthcare and e-governance.' },
+        { name: 'Coalition Systems', stage: 'Portfolio', sector: 'Technology · Systems', url: 'https://coalition.systems/', slot: 'logo-coalition', logo: img + 'coalition-systems.jpg',
+          desc: 'Coalition Systems is building technology and systems designed to create scalable solutions for complex markets.' }
+      ],
+      ecosystem: [
+        ['SINE, IIT Bombay','Mumbai'],['IIT Madras Research Park','Chennai'],['T-Hub','Hyderabad'],
+        ['University of Luxembourg','Luxembourg'],['India–Belgium–Luxembourg Chamber of Commerce (IBCL)','Europe · India'],['Luxembourg Chamber of Commerce','Luxembourg']
+      ].map(([name, place]) => ({ name, place, tagClass: /Luxembourg|Europe/.test(place) ? 'tag-accent-2' : 'tag-accent' })),
+      events: [
+        ['Bharat Innovates','New Delhi','September 2026','event-02'],
+        ['European Policy Forum','Brussels','July 2026','event-03'],
+        ['European Innovation Summit','Berlin','June 2026','event-01'],
+        ['India Europe Dialogue','Mumbai','March 2026','blog-03b'],
+        ['Global Institutions Forum','London','December 2025','blog-img-08']
+      ].map(([name, city, when, f], i) => ({ name, city, when, slot: 'event-' + i, img: img + 'blog/' + f + '.jpg' })),
+      insights: [
+        { date: 'September 2026', title: 'Luxembourg as a Gateway to Indian Innovation', desc: 'How Luxembourg can serve as a strategic bridge between Indian innovation and European capital, institutions, and markets.' },
+        { date: 'June 2026', title: 'The Indian IPO Market Comes of Age', desc: "India's public markets are entering a more mature phase. What does that mean for companies, investors, and international capital?" },
+        { date: 'March 2026', title: 'The Case for Cross-Border Venture in the Current Cycle', desc: 'As venture capital becomes more selective, disciplined cross-border investing may offer a distinctive route to opportunity.' }
+      ],
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      onSubmit: e => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

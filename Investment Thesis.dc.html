@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/styles.css">
+<script src="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root { --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif; --font-body: 'Plus Jakarta Sans', system-ui, sans-serif; --font-heading-weight: 600; --color-bg: #f2efea; --color-accent-2: oklch(0.58 0.035 220); --color-accent-2-100: oklch(0.955 0.008 220); --color-accent-2-200: oklch(0.91 0.014 220); --color-accent-2-300: oklch(0.84 0.022 220); --color-accent-2-400: oklch(0.72 0.03 220); --color-accent-2-500: oklch(0.58 0.035 220); --color-accent-2-600: oklch(0.5 0.035 220); --color-accent-2-700: oklch(0.42 0.032 220); --color-accent-2-800: oklch(0.35 0.028 220); --color-accent-2-900: oklch(0.28 0.022 220); }
+h1, h2, h3, blockquote { color: #2f4247; letter-spacing: -0.02em; }
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: clip; text-wrap: pretty; background: var(--color-bg); }
+a { color: var(--color-accent-700); text-decoration: none; }
+a:hover { color: var(--color-accent-800); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--color-text);">
+
+<nav class="nav" style="position: sticky; top: 0; z-index: 50; background: {{ navBg }}; -webkit-backdrop-filter: saturate(1.4) blur(16px); backdrop-filter: saturate(1.4) blur(16px); box-shadow: {{ navShadow }}; transition: background 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease; padding-block: {{ navPad }}; padding-inline: max(clamp(20px,5vw,72px), calc((100% - 1200px)/2 + clamp(20px,5vw,72px))); flex-wrap: wrap; gap: var(--space-4);">
+  <a href="Home.dc.html" class="nav-brand" style="display: flex; align-items: center; text-decoration: none;"><img src="assets/ovington-logo-black.png" alt="Ovington Capital Partners" style="height: 36px; width: auto; display: block;"></a>
+  <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; margin-left: auto;">
+    <a href="About.dc.html">About</a>
+    <a href="Investment%20Thesis.dc.html" style="font-weight: 700; color: var(--color-text);">Investment Thesis</a>
+    <a href="Why%20Ovington.dc.html">Why Ovington</a>
+    <a href="Portfolio.dc.html">Portfolio</a>
+    <a href="Home.dc.html#team">Team</a>
+    <a href="Home.dc.html#insights">Insights</a>
+    <a href="Home.dc.html#contact" class="btn btn-primary" style="text-decoration: none;">Investor enquiries</a>
+  </div>
+</nav>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px,5vw,72px);">
+
+  <section data-screen-label="Thesis hero" style="position: relative; padding: clamp(56px,9vw,120px) 0 clamp(24px,4vw,48px);">
+    <div style="position: absolute; right: -80px; top: -60px; width: 320px; height: 320px; border-radius: 50%; background: var(--color-accent-2-200); z-index: 0; pointer-events: none;"></div>
+    <div style="position: relative; display: flex; flex-direction: column; gap: var(--space-6);">
+      <span class="tag tag-accent" style="align-self: flex-start;">Investment thesis</span>
+      <h1 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(40px,5.4vw,70px); line-height: 1.04; letter-spacing: -0.035em; margin: 0; max-width: 16ch;">A hybrid holding across India's public and private markets.</h1>
+      <p style="font-size: 18px; line-height: 1.65; max-width: 58ch; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent);">With sustained expected growth approaching 7%, nearly 1.5 billion people and a clear path toward becoming the world's third-largest economy, India is emerging as one of the defining economic and geopolitical powers of the coming decade.</p>
+    </div>
+  </section>
+
+  <!-- Public vs Private -->
+  <section id="markets" data-screen-label="Public vs Private" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">One vehicle, two sleeves</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-3); max-width: 24ch;">Public and private markets, side by side.</h2>
+    <p style="margin: 0 0 var(--space-6); font-size: 17px; line-height: 1.65; max-width: 60ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">The long-term goal is to capitalize on the proven business models, compounding potential and liquidity of Indian public markets, and complement them with selected India-linked private-market opportunities.</p>
+
+    <div style="display: flex; height: 56px; border-radius: 999px; overflow: hidden; margin-bottom: var(--space-8); font-weight: 700; font-size: 15px;">
+      <div style="flex: 80; background: var(--color-accent-2-300); color: var(--color-accent-2-900); display: flex; align-items: center; padding: 0 var(--space-6);">Public sleeve · ~80%</div>
+      <div style="flex: 20; background: var(--color-accent-200); color: var(--color-accent-900); display: flex; align-items: center; justify-content: flex-end; padding: 0 var(--space-6);">Private sleeve · ~20%</div>
+    </div>
+
+    <sc-if value="{{ isCards }}" hint-placeholder-val="{{ true }}">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: var(--space-6);">
+        <div style="background: var(--color-accent-2-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(28px,4vw,48px); display: flex; flex-direction: column; gap: var(--space-6);">
+          <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent-2); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px;">01</div>
+            <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 30px; margin: 0;">Public Markets</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6; font-weight: 600; color: var(--color-accent-2-800);">India-listed equities. Compounding with liquidity.</p>
+          </div>
+          <sc-for list="{{ rows }}" as="r" hint-placeholder-count="7">
+            <div style="display: flex; flex-direction: column; gap: var(--space-1);">
+              <span style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-2-800);">{{ r.label }}</span>
+              <span style="font-size: 16px; line-height: 1.55;">{{ r.pub }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="background: var(--color-accent-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(28px,4vw,48px); display: flex; flex-direction: column; gap: var(--space-6);">
+          <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+            <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: var(--color-bg); display: grid; place-items: center; font-family: var(--font-heading); font-size: 24px;">02</div>
+            <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 30px; margin: 0;">Private Markets</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6; font-weight: 600; color: var(--color-accent-800);">India-linked ventures. Asymmetric upside.</p>
+          </div>
+          <sc-for list="{{ rows }}" as="r" hint-placeholder-count="7">
+            <div style="display: flex; flex-direction: column; gap: var(--space-1);">
+              <span style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; color: var(--color-accent-800);">{{ r.label }}</span>
+              <span style="font-size: 16px; line-height: 1.55;">{{ r.priv }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ isTable }}" hint-placeholder-val="{{ false }}">
+      <div style="overflow-x: auto; border-radius: calc(2 * var(--radius-lg)); background: var(--color-surface);">
+        <table class="table" style="width: 100%; min-width: 720px;">
+          <thead>
+            <tr>
+              <th style="width: 20%;"></th>
+              <th style="width: 40%; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; text-transform: none; letter-spacing: 0; color: var(--color-accent-2-800);">Public Markets</th>
+              <th style="width: 40%; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 22px; text-transform: none; letter-spacing: 0; color: var(--color-accent-800);">Private Markets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <sc-for list="{{ rows }}" as="r" hint-placeholder-count="7">
+              <tr>
+                <td style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700; vertical-align: top;">{{ r.label }}</td>
+                <td style="font-size: 15px; line-height: 1.55; vertical-align: top;">{{ r.pub }}</td>
+                <td style="font-size: 15px; line-height: 1.55; vertical-align: top;">{{ r.priv }}</td>
+              </tr>
+            </sc-for>
+          </tbody>
+        </table>
+      </div>
+    </sc-if>
+
+    <p style="margin: var(--space-6) 0 0; font-size: 14px; line-height: 1.6; max-width: 70ch; color: color-mix(in srgb, var(--color-text) 75%, transparent);">Deployment over 24–36 months. Allocation weights, company counts and check sizes are indicative and remain deliberately flexible as opportunities evolve across both sleeves.</p>
+  </section>
+
+  <section style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="background: var(--color-accent-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(32px,5vw,64px); display: flex; justify-content: space-between; align-items: center; gap: var(--space-6); flex-wrap: wrap;">
+      <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(26px,3vw,38px); line-height: 1.15; margin: 0; max-width: 24ch;">See the full case for investing with Ovington.</h2>
+      <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+        <a href="Why%20Ovington.dc.html" class="btn btn-primary" style="text-decoration: none;">Why Ovington →</a>
+        <a href="Home.dc.html#contact" class="btn btn-ghost" style="text-decoration: none;">Investor enquiries</a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: var(--space-8) 0; display: flex; flex-direction: column; gap: var(--space-4); font-size: 13px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 72%, transparent);">
+    <div style="display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; align-items: baseline;">
+      <img src="assets/ovington-logo-black.png" alt="Ovington Capital Partners" style="height: 28px; width: auto;">
+      <span>Copyright © 2026 Ovington Capital Partners. All rights reserved.</span>
+    </div>
+    <p style="margin: 0; max-width: 90ch;">This website does not constitute an offer to sell or a solicitation of an offer to subscribe to any securities or investment products. Any investment in Ovington Capital Partners is subject to comprehensive due diligence, definitive subscription documentation, and applicable regulatory approval under Luxembourg law.</p>
+  </footer>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;comparison&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;cards&quot;,&quot;table&quot;],&quot;default&quot;:&quot;cards&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { this._onScroll = () => { const s = window.scrollY > 24; if (s !== !!this.state.scrolled) this.setState({ scrolled: s }); }; window.addEventListener('scroll', this._onScroll, { passive: true }); this._onScroll(); }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+
+  state = { open: {}, sent: false, who: 'Investor' };
+  renderVals() {
+    const img = 'https://highwebsolutions.com/ovington-capital/images/';
+    const expanded = this.props.bios === 'expanded';
+    const team = [
+      ['Marco Palacino','Managing Director','team-01','https://www.linkedin.com/in/marco-palacino-4715681a/',"Marco brings over thirty years of experience across asset management, private credit, real estate, and venture capital. He previously served as Country Head for Italy at BNY Mellon Investment Management, where he led institutional client relationships and product development across Southern Europe. His career has spanned senior roles at global asset managers, private banks, and alternative investment firms, giving him a rare view across the full spectrum of European institutional capital."],
+      ['Himanshu Upadhyay','Director, Luxembourg','team-02','https://www.linkedin.com/in/himanshu1512/',"Himanshu brings more than twenty years of leadership experience across insurance, financial services, strategy, product, and risk management, spanning Europe and Asia-Pacific. He currently holds a senior leadership role at Foyer Group, one of Luxembourg's largest financial institutions, where he has led cross-border initiatives, product innovation, and enterprise risk. His combination of European institutional depth and Asian market fluency is central to Ovington's positioning at the Europe–India corridor."],
+      ['Pranjul Shah','Director, Luxembourg','team-03','https://www.linkedin.com/in/pranjulshah/',"Pranjul serves as Head of Incubator at the University of Luxembourg and is a faculty member of the MIT LinQ Catalyst Program. He is a central architect of Luxembourg's entrepreneurship acceleration ecosystem and has advised founders, universities, and government bodies across Europe on deep-tech commercialisation. At Ovington, Pranjul anchors the firm's innovation ecosystem strategy and its academic and research partnerships."],
+      ['Elisabetta Luppi','Director & Senior Corporate Officer','team-04','https://www.linkedin.com/in/elisabetta-luppi-371140335/',"Elisabetta brings deep expertise in business administration, corporate affairs, and compliance, developed over a career spanning Luxembourg's regulated financial services sector. She serves as the operational and governance backbone of the firm, overseeing regulatory alignment, corporate secretarial function, and the institutional standards that define a Luxembourg investment house."],
+      ['Maheep Sidhu','Investment Analyst','team-05','https://www.linkedin.com/in/maheep-sidhu-5a7578160/',"Maheep leads investment analysis and business development at Ovington, with a focus on deal sourcing, valuation, and investor relations across the Europe–India corridor. He brings experience across financial consulting, wealth management research at BGL BNP Paribas, and cross-border venture capital. He works closely with India's leading innovation ecosystems, including SINE at IIT Bombay, to build the firm's proprietary deal pipeline."]
+    ].map(([name, role, f, linkedin, bio], i) => {
+      const open = expanded || !!this.state.open[i];
+      return { name, role, linkedin, bio, open, slot: 'team-' + i, photo: img + 'team/' + f + '.jpg',
+        toggleLabel: open ? 'Hide bio' : 'Read bio',
+        toggle: () => this.setState(s => ({ open: { ...s.open, [i]: !open } })) };
+    });
+    const layout = this.props.comparison ?? 'cards';
+    return { navBg: this.state && this.state.scrolled ? 'color-mix(in srgb, #f2efea 86%, transparent)' : 'transparent', navShadow: this.state && this.state.scrolled ? '0 1px 0 color-mix(in srgb, #13262c 10%, transparent), 0 8px 24px -12px color-mix(in srgb, #13262c 28%, transparent)' : 'none', navPad: this.state && this.state.scrolled ? '10px' : '18px', 
+      showHeroImage: this.props.heroImage ?? true,
+      isCards: layout === 'cards',
+      isTable: layout === 'table',
+      rows: [
+        { label: 'Allocation', pub: '~80% of the holding (flexible)', priv: '~20% of the holding (flexible)' },
+        { label: 'What it holds', pub: 'Indian-listed companies with domestic and global growth potential', priv: 'Seed to pre-IPO companies led by India-linked or Indian-origin founders' },
+        { label: 'Sector focus', pub: 'Companies linked to the industrialization and electrification themes', priv: 'Advanced manufacturing & strategic tech, health tech, climate tech, AI applications & enterprise software' },
+        { label: 'Strategy', pub: 'Long-only, unhedged, semi-activist buy & hold, with a preference for high-quality mid-caps', priv: 'Seed to Series A today, prepared to invest up to the pre-IPO stage as relationships build' },
+        { label: 'Portfolio', pub: '10–12 holdings: 6–8 core positions plus satellites', priv: '8–10 companies, indicative initial checks of €300K–€400K with follow-on capacity' },
+        { label: 'Access', pub: 'SEBI Category II Foreign Portfolio Investor, direct access to the NSE and BSE', priv: 'Sourced through Ovington Advisory across Mumbai, Chennai and Hyderabad' },
+        { label: 'Role for investors', pub: 'Risk-conscious returns and liquidity for shareholders', priv: 'Asymmetric upside, judged on realized cash returns rather than mark-ups' }
+      ],
+      value: [
+        { n: '1', title: 'Cross-border positioning', body: "Helping Indian and Indian-origin founders access European capital, customers, regulatory knowledge and corporate partners." },
+        { n: '2', title: 'Operating network', body: 'Access to Indian-origin executives, operators, founders and domain experts across technology, finance, healthcare and enterprise.' },
+        { n: '3', title: 'Europe expansion engine', body: 'Luxembourg-anchored support for portfolio companies entering EU markets.' },
+        { n: '4', title: 'Institutional partnerships', body: 'India ecosystem access through SINE IIT Bombay, IIT Madras Research Park and T-Hub.' },
+        { n: '5', title: 'Listed-market intelligence', body: 'Public-market signals inform private-market valuation, timing and sector conviction.' }
+      ],
+      team,
+      portfolio: [
+        { name: 'Plenome Technologies', kicker: 'India-domiciled · Seed', sector: 'Healthcare IT · Distributed systems · AI', url: 'https://plenome.com/', slot: 'logo-plenome', logo: img + 'plenome-logo.jpg',
+          desc: 'IIT Madras-incubated. Builds secure, intelligent digital infrastructure for healthcare and e-governance. Ovington led the seed round.' },
+        { name: 'Coalition Systems', kicker: 'Indian global talent · Pre-seed', sector: 'Defence tech · Secure collaboration · Dual-use', url: 'https://coalition.systems/', slot: 'logo-coalition', logo: img + 'coalition-systems.jpg',
+          desc: 'San Francisco-based defence software company building secure collaboration infrastructure for governments, militaries and alliance organizations. Backed by a16z Speedrun.' }
+      ],
+      ecosystem: [
+        ['SINE, IIT Bombay','Mumbai'],['IIT Madras Research Park','Chennai'],['T-Hub','Hyderabad'],
+        ['University of Luxembourg','Luxembourg'],['India–Belgium–Luxembourg Chamber of Commerce (IBCL)','Europe · India'],['Luxembourg Chamber of Commerce','Luxembourg']
+      ].map(([name, place]) => ({ name, place, tagClass: /Luxembourg|Europe/.test(place) ? 'tag-accent-2' : 'tag-accent' })),
+      insights: [
+        { date: 'September 2026', title: 'Luxembourg as a Gateway to Indian Innovation', desc: 'How Luxembourg can serve as a strategic bridge between Indian innovation and European capital, institutions, and markets.' },
+        { date: 'June 2026', title: 'The Indian IPO Market Comes of Age', desc: "India's public markets are entering a more mature phase. What does that mean for companies, investors, and international capital?" },
+        { date: 'March 2026', title: 'The Case for Cross-Border Venture in the Current Cycle', desc: 'As venture capital becomes more selective, disciplined cross-border investing may offer a distinctive route to opportunity.' }
+      ],
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      onSubmit: e => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

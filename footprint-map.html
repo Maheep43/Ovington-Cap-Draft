@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/styles.css">
+<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap">
+<style>
+:root { --color-accent-2: oklch(0.58 0.035 220); --color-accent-2-100: oklch(0.955 0.008 220); --color-accent-2-200: oklch(0.91 0.014 220); --color-accent-2-300: oklch(0.84 0.022 220); --color-accent-2-400: oklch(0.72 0.03 220); --color-accent-2-500: oklch(0.58 0.035 220); --color-accent-2-600: oklch(0.5 0.035 220); --color-accent-2-700: oklch(0.42 0.032 220); --color-accent-2-800: oklch(0.35 0.028 220); --color-accent-2-900: oklch(0.28 0.022 220); --font-body: 'Plus Jakarta Sans', system-ui, sans-serif; --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif; --font-heading-weight: 600; }
+html, body { margin: 0; height: 100%; background: transparent; font-family: var(--font-body); color: var(--color-text); overflow: hidden; }
+#wrap { position: relative; width: 100%; height: 100%; }
+svg { width: 100%; height: 100%; display: block; }
+.pin { cursor: pointer; }
+.pin:focus-visible { outline: none; }
+.pin:focus-visible circle.dot { stroke: var(--color-accent); stroke-width: 3; }
+#card { position: absolute; left: 16px; bottom: 16px; max-width: 280px; background: var(--color-surface); border-radius: var(--radius-lg); padding: 14px 18px; box-shadow: var(--shadow-md); font-size: 14px; line-height: 1.5; }
+#card b { font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 18px; display: block; margin-bottom: 2px; }
+#credit { position: absolute; right: 12px; bottom: 8px; font-size: 11px; color: color-mix(in srgb, var(--color-text) 65%, transparent); }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <svg id="map" role="img" aria-label="Map of Ovington offices in Luxembourg, Milan, Mumbai, Hyderabad and Chennai"></svg>
+  <div id="card"><b>Luxembourg</b>Headquarters · 53 Boulevard Royal, L-2449 Luxembourg</div>
+  <div id="credit">Geography: Natural Earth</div>
+</div>
+<script>
+const offices = [
+  { name: 'Luxembourg', ll: [6.13, 49.61], role: 'Headquarters · 53 Boulevard Royal, L-2449 Luxembourg', hq: true, dx: -10, anchor: 'end' },
+  { name: 'Milan', ll: [9.19, 45.46], role: 'Italy', dx: 12, anchor: 'start' },
+  { name: 'Mumbai', ll: [72.88, 19.08], role: 'Ovington Advisory (Algram Labs Pvt. Ltd.) · SINE, IIT Bombay', dx: -12, anchor: 'end' },
+  { name: 'Hyderabad', ll: [78.49, 17.39], role: 'Ovington Advisory (Algram Labs Pvt. Ltd.) · T-Hub', dx: 12, anchor: 'start' },
+  { name: 'Chennai', ll: [80.27, 13.08], role: 'Ovington Advisory (Algram Labs Pvt. Ltd.) · IIT Madras Research Park', dx: 12, anchor: 'start' }
+];
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const svg = d3.select('#map');
+let world;
+function draw() {
+  const { width: w, height: h } = document.getElementById('wrap').getBoundingClientRect();
+  svg.selectAll('*').remove();
+  const frame = { type: 'MultiPoint', coordinates: [[-2, 56], [88, 6]] };
+  const proj = d3.geoMercator().fitExtent([[40, 30], [w - 40, h - 30]], frame);
+  const path = d3.geoPath(proj);
+  const hi = { '356': css('--color-accent-2-300'), '442': css('--color-accent-300'), '380': css('--color-accent-200') };
+  svg.append('g').selectAll('path').data(world).join('path')
+    .attr('d', path).attr('fill', d => hi[d.id] || css('--color-neutral-200'))
+    .attr('stroke', css('--color-bg')).attr('stroke-width', 0.8);
+  const [lx, ly] = proj(offices[0].ll), [mx, my] = proj(offices[2].ll);
+  const cx = (lx + mx) / 2, cy = Math.min(ly, my) - 60;
+  svg.append('path').attr('d', `M${lx},${ly} Q${cx},${cy} ${mx},${my}`)
+    .attr('fill', 'none').attr('stroke', css('--color-accent')).attr('stroke-width', 2.5)
+    .attr('stroke-dasharray', '2 8').attr('stroke-linecap', 'round');
+  const g = svg.append('g').selectAll('g').data(offices).join('g')
+    .attr('class', 'pin').attr('tabindex', 0).attr('role', 'button').attr('aria-label', d => d.name)
+    .attr('transform', d => `translate(${proj(d.ll)})`)
+    .on('click keydown', (e, d) => { if (e.type === 'keydown' && e.key !== 'Enter' && e.key !== ' ') return; select(d); });
+  g.append('circle').attr('r', 16).attr('fill', 'transparent');
+  g.append('circle').attr('class', 'dot').attr('r', d => d.hq ? 8 : 6)
+    .attr('fill', d => d.ll[0] > 60 ? css('--color-accent-2-700') : css('--color-accent'))
+    .attr('stroke', css('--color-surface')).attr('stroke-width', 2.5);
+  g.append('text').text(d => d.name).attr('x', d => d.dx).attr('y', 4).attr('text-anchor', d => d.anchor)
+    .attr('font-size', 13).attr('font-weight', 700).attr('fill', css('--color-text'))
+    .attr('paint-order', 'stroke').attr('stroke', css('--color-accent-2-100')).attr('stroke-width', 4);
+}
+function select(d) {
+  document.getElementById('card').innerHTML = `<b>${d.name}</b>${d.role}`;
+}
+fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json').then(r => r.json()).then(t => {
+  world = topojson.feature(t, t.objects.countries).features;
+  draw();
+  new ResizeObserver(draw).observe(document.getElementById('wrap'));
+});
+</script>
+</body>
+</html>

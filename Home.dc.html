@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/styles.css">
+<script src="_ds/organic-6594c182-7e57-4358-9ddf-1edf37999cc0/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+:root { --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif; --font-body: 'Plus Jakarta Sans', system-ui, sans-serif; --font-heading-weight: 600; --color-bg: #f2efea; --color-accent-2: oklch(0.58 0.035 220); --color-accent-2-100: oklch(0.955 0.008 220); --color-accent-2-200: oklch(0.91 0.014 220); --color-accent-2-300: oklch(0.84 0.022 220); --color-accent-2-400: oklch(0.72 0.03 220); --color-accent-2-500: oklch(0.58 0.035 220); --color-accent-2-600: oklch(0.5 0.035 220); --color-accent-2-700: oklch(0.42 0.032 220); --color-accent-2-800: oklch(0.35 0.028 220); --color-accent-2-900: oklch(0.28 0.022 220); }
+h1, h2, h3, blockquote { color: #2f4247; letter-spacing: -0.02em; }
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: clip; text-wrap: pretty; background: var(--color-bg); }
+a { color: var(--color-accent-700); text-decoration: none; }
+a:hover { color: var(--color-accent-800); text-decoration: underline; }
+</style>
+</helmet>
+
+<div style="font-family: var(--font-body); color: var(--color-text);">
+
+<nav class="nav" style="position: sticky; top: 0; z-index: 50; background: {{ navBg }}; -webkit-backdrop-filter: saturate(1.4) blur(16px); backdrop-filter: saturate(1.4) blur(16px); box-shadow: {{ navShadow }}; transition: background 0.35s ease, box-shadow 0.35s ease, padding 0.35s ease; padding-block: {{ navPad }}; padding-inline: max(clamp(20px,5vw,72px), calc((100% - 1200px)/2 + clamp(20px,5vw,72px))); flex-wrap: wrap; gap: var(--space-4);">
+  <a href="Home.dc.html" class="nav-brand" style="display: flex; align-items: center; text-decoration: none;"><img src="assets/ovington-logo-black.png" alt="Ovington Capital Partners" style="height: 36px; width: auto; display: block;"></a>
+  <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; margin-left: auto;">
+    <a href="About.dc.html">About</a>
+    <a href="Investment%20Thesis.dc.html">Investment Thesis</a>
+    <a href="Why%20Ovington.dc.html">Why Ovington</a>
+    <a href="Portfolio.dc.html">Portfolio</a>
+    <a href="#team">Team</a>
+    <a href="#insights">Insights</a>
+    <a href="#contact" class="btn btn-primary" style="text-decoration: none;">Investor enquiries</a>
+  </div>
+</nav>
+
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(20px,5vw,72px);">
+
+  <!-- Hero -->
+  <section data-screen-label="Hero" style="position: relative; margin-inline: calc(50% - 50vw); padding: clamp(32px,4vw,56px) max(clamp(20px,5vw,72px), calc((100vw - 1200px)/2 + clamp(20px,5vw,72px))) 0; overflow: hidden; background: repeating-linear-gradient(to bottom, transparent 0 39px, rgba(198,113,57,0.06) 39px 40px);">
+    <div style="display: flex; align-items: center; gap: var(--space-6); max-width: 1000px;">
+      <span style="width: 1px; height: 30px; background: var(--color-accent-300); flex: none;"></span>
+      <span style="font-size: 13px; letter-spacing: 0.24em; font-weight: 600; color: var(--color-accent-700); white-space: nowrap;">LUXEMBOURG · MILAN · INDIA</span>
+      <span style="flex: 1; height: 1px; background: var(--color-accent-300);"></span>
+    </div>
+    <h1 style="position: relative; z-index: 1; font-family: var(--font-heading); font-weight: 600; font-size: clamp(48px,8vw,124px); line-height: 0.98; letter-spacing: -0.045em; margin: clamp(32px,4vw,56px) 0 0; max-width: 9.5em;">
+      <span style="display: block;">Where Global</span>
+      <span style="display: block;">Capital</span>
+      <span style="display: block;">Meets <span style="color: var(--color-accent);">Indian</span></span>
+      <span style="display: block; color: var(--color-accent);">Innovation.</span>
+    </h1>
+    <div style="position: relative; margin-top: clamp(16px,2vw,32px); margin-inline: calc(-1 * max(clamp(20px,5vw,72px), calc((100vw - 1200px)/2 + clamp(20px,5vw,72px))));">
+      <svg viewBox="0 0 2576 650" preserveAspectRatio="xMidYMax slice" style="display: block; width: 100%; height: clamp(220px, 26vw, 420px);" fill="none" stroke-width="3" aria-hidden="true">
+        <rect x="0" y="435" width="2576" height="215" fill="#ebdfcf" stroke="none"></rect>
+        <g stroke="#c67139" stroke-opacity="0.4">
+          <path d="M0 418H1500"></path>
+          <path d="M14 418V452M145 418V452M277 418V452M540 418V452M670 418V452M933 418V452M1065 418V452M1196 418V452M1327 418V452"></path>
+          <path d="M47 580V422L119 385L191 422V580"></path>
+          <path d="M227 580V370L313 330L398 370V580"></path>
+          <path d="M418 580V412L484 372L549 412V580"></path>
+          <path d="M890 580V428L967 386L1042 428V580"></path>
+          <path d="M1374 580V445L1453 401L1531 445V580"></path>
+          <path d="M638 392H802M638 470H802M1124 368H1288M1124 447H1288"></path>
+          <path d="M1610 580V372M1650 580V342M1690 580V326M1728 580V320M1768 580V326M1808 580V342"></path>
+          <circle cx="1886" cy="270" r="158"></circle>
+        </g>
+        <g stroke="#c67139">
+          <path d="M0 452H1525V580"></path>
+          <path d="M105 580A195 195 0 0 1 495 580"></path>
+          <path d="M610 580A195 195 0 0 1 1000 580"></path>
+          <path d="M1118 580A118 118 0 0 1 1354 580"></path>
+          <path d="M598 580V250L618 200L638 250V580M802 580V250L822 200L842 250V580"></path>
+          <path d="M608 580V315L720 256L832 315V580"></path>
+          <path d="M1098 580V270H1314V580"></path>
+          <path d="M1110 270V180L1137 55L1164 180V270M1190 270V150L1219 13L1249 150V270M1262 270V180L1288 55L1314 180V270"></path>
+          <path d="M1590 580Q1722 300 1840 580"></path>
+          <path d="M1854 580V375H1948V580"></path>
+          <path d="M2014 580V220H2149V580M2083 220V580M2013 197H2157"></path>
+          <path d="M2241 580V405H2333V345H2412V267H2490V345H2576M2333 345V580"></path>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section data-screen-label="Intro" style="padding: clamp(40px,6vw,72px) 0 0; display: flex; justify-content: space-between; align-items: end; gap: var(--space-6); flex-wrap: wrap;">
+    <p style="font-size: 18px; line-height: 1.65; max-width: 60ch; margin: 0; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Ovington Capital Partners is a Luxembourg-domiciled investment and advisory platform founded by a multidisciplinary team combining investment, governance, venture building, and cross-border operating experience. We operate at the intersection of European institutional capital and India's world-class innovation economy.</p>
+    <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+      <a href="#markets" class="btn btn-primary" style="text-decoration: none;">Our investment focus</a>
+      <a href="#team" class="btn btn-ghost" style="text-decoration: none;">Meet the team</a>
+    </div>
+  </section>
+
+  <!-- Holding statement -->
+  <section data-screen-label="Investment Holding" style="padding: clamp(40px,6vw,80px) 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: clamp(32px,5vw,80px); align-items: start;">
+    <div>
+      <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">An India-focused investment holding</span>
+      <blockquote style="margin: 0; font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(28px,3.2vw,42px); line-height: 1.18; max-width: 22ch;">“Ovington exists to connect European capital and expertise with India-linked, growth-driven opportunities.”</blockquote>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+      <p style="margin: 0; font-size: 18px; line-height: 1.65; max-width: 48ch;">Ovington is an Investment Holding aiming to generate value from India's secular growth, translating deep knowledge around the country's structural expansion and a strong global operational network into selected investments.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.65; max-width: 48ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">A Luxembourg-domiciled holding investing in selected India-listed companies, accessed as a SEBI-registered Foreign Portfolio Investor, alongside India-linked private opportunities from seed to pre-IPO.</p>
+      <a href="About.dc.html" class="btn btn-secondary" style="align-self: flex-start; text-decoration: none; margin-top: var(--space-2);">How the holding is structured →</a>
+    </div>
+  </section>
+
+  <!-- Investment focus -->
+  <section id="markets" data-screen-label="Investment Focus" style="scroll-margin-top: 96px; padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(36px,4.4vw,60px); line-height: 1.08; letter-spacing: -0.035em; margin: 0;">Our Investment Focus</h2>
+    <div style="width: 72px; height: 2px; border-radius: 2px; background: var(--color-accent-400); margin: var(--space-6) 0 clamp(32px,4vw,56px);"></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); gap: clamp(24px,4vw,64px);">
+      <a href="Investment%20Thesis.dc.html" onMouseEnter="{{ priv.enter }}" onMouseLeave="{{ leave }}" onFocus="{{ priv.enter }}" onBlur="{{ leave }}" style="position: relative; display: block; min-height: 340px; border-radius: calc(2 * var(--radius-lg)); text-decoration: none; color: inherit; overflow: hidden; background: {{ priv.bg }}; box-shadow: var(--shadow-sm); transition: background 0.25s ease;">
+        <sc-if value="{{ priv.rest }}" hint-placeholder-val="{{ true }}">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-6); padding: var(--space-8);">
+            <span style="position: absolute; top: 32px; right: 36px; width: 14px; height: 14px; border-radius: 50%; background: var(--color-accent);"></span>
+            <div style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--color-accent); display: grid; place-items: center; color: var(--color-accent);"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17 2 2a1 1 0 1 0 3-3"></path><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path><path d="m21 3 1 11h-2"></path><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path><path d="M3 4h8"></path></svg></div>
+            <h3 style="margin: 0; font-size: clamp(24px,2.4vw,32px); font-weight: 700; letter-spacing: -0.02em;">Private Markets</h3>
+          </div>
+        </sc-if>
+        <sc-if value="{{ priv.hover }}" hint-placeholder-val="{{ false }}">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; padding: clamp(28px,3vw,44px); color: #fff;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span style="font-weight: 700; font-size: 16px;">Global opportunities</span>
+              <span style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); display: grid; place-items: center; flex: none;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></span>
+            </div>
+            <div style="margin-top: auto; display: flex; flex-direction: column; gap: var(--space-3);">
+              <h3 style="margin: 0; font-size: clamp(26px,2.6vw,34px); font-weight: 600; color: #fff;">Private Markets</h3>
+              <p style="margin: 0; font-size: 16px; line-height: 1.6; max-width: 48ch;">Seed to pre-IPO investments in India-domiciled and Indian-led founders across advanced manufacturing &amp; strategic tech, health tech, climate tech, AI applications and enterprise software.</p>
+              <span style="font-weight: 700; font-size: 15px; margin-top: var(--space-3); color: var(--color-accent-300);">~20% of the holding · Read the investment thesis →</span>
+            </div>
+          </div>
+        </sc-if>
+      </a>
+      <a href="Investment%20Thesis.dc.html" onMouseEnter="{{ pub.enter }}" onMouseLeave="{{ leave }}" onFocus="{{ pub.enter }}" onBlur="{{ leave }}" style="position: relative; display: block; min-height: 340px; border-radius: calc(2 * var(--radius-lg)); text-decoration: none; color: inherit; overflow: hidden; background: {{ pub.bg }}; box-shadow: var(--shadow-sm); transition: background 0.25s ease;">
+        <sc-if value="{{ pub.rest }}" hint-placeholder-val="{{ true }}">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-6); padding: var(--space-8);">
+            <span style="position: absolute; top: 32px; right: 36px; width: 14px; height: 14px; border-radius: 50%; background: var(--color-accent);"></span>
+            <div style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--color-accent); display: grid; place-items: center; color: var(--color-accent);"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18"></path><path d="M6 18v-7"></path><path d="M10 18v-7"></path><path d="M14 18v-7"></path><path d="M18 18v-7"></path><path d="M12 2 20 7H4z"></path></svg></div>
+            <h3 style="margin: 0; font-size: clamp(24px,2.4vw,32px); font-weight: 700; letter-spacing: -0.02em;">Public Markets</h3>
+          </div>
+        </sc-if>
+        <sc-if value="{{ pub.hover }}" hint-placeholder-val="{{ false }}">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; padding: clamp(28px,3vw,44px); color: #fff;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span style="font-weight: 700; font-size: 16px;">India</span>
+              <span style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); display: grid; place-items: center; flex: none;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></span>
+            </div>
+            <div style="margin-top: auto; display: flex; flex-direction: column; gap: var(--space-3);">
+              <h3 style="margin: 0; font-size: clamp(26px,2.6vw,34px); font-weight: 600; color: #fff;">Public Markets</h3>
+              <p style="margin: 0; font-size: 16px; line-height: 1.6; max-width: 48ch;">A concentrated long-only strategy in India-listed equities, focused on the companies expanding India's productive capacity through industrialization and electrification.</p>
+              <span style="font-weight: 700; font-size: 15px; margin-top: var(--space-3); color: var(--color-accent-300);">~80% of the holding · Read the investment thesis →</span>
+            </div>
+          </div>
+        </sc-if>
+      </a>
+    </div>
+  </section>
+
+  <!-- Why Ovington teaser -->
+  <section data-screen-label="Why Ovington" style="margin-top: clamp(56px,7vw,96px); background: #13262c; color: #fff; border-radius: calc(3 * var(--radius-lg)); padding: clamp(36px,5vw,72px);">
+    <div style="display: flex; justify-content: space-between; align-items: end; gap: var(--space-8); flex-wrap: wrap;">
+      <div style="display: flex; flex-direction: column; gap: var(--space-4); max-width: 640px;">
+        <span style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-300);">Why invest with Ovington</span>
+        <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(34px,4.2vw,56px); line-height: 1.08; letter-spacing: -0.03em; margin: 0; color: #fff;">A European gateway to Indian growth.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; max-width: 52ch; color: rgba(255,255,255,0.86); text-wrap: pretty;">India is the world's fastest-growing major economy, yet European institutional capital and expertise remain structurally underexposed to India-linked growth. Ovington is built to close that gap.</p>
+      </div>
+      <a href="Why%20Ovington.dc.html" class="btn btn-primary" style="text-decoration: none; flex: none;">The full investment case →</a>
+    </div>
+    <div style="height: 1px; background: rgba(255,255,255,0.18); margin: clamp(32px,4vw,56px) 0 0;"></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));">
+      <sc-for list="{{ value }}" as="v" hint-placeholder-count="4">
+        <div style="display: flex; flex-direction: column; gap: var(--space-3); padding: clamp(24px,2.6vw,36px) clamp(16px,1.6vw,24px); border-top: 3px solid transparent; transition: background 0.25s ease, border-color 0.25s ease; border-radius: 0 0 var(--radius-lg) var(--radius-lg);" style-hover="background: rgba(255,255,255,0.06); border-top-color: var(--color-accent);">
+          <span style="font-family: var(--font-heading); font-weight: 600; font-size: 44px; line-height: 1; letter-spacing: -0.03em; color: var(--color-accent-300);">0{{ v.n }}</span>
+          <h3 style="margin: var(--space-2) 0 0; font-size: 18px; font-weight: 700; color: #fff;">{{ v.title }}</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.82); text-wrap: pretty;">{{ v.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" data-screen-label="Portfolio" style="scroll-margin-top: 96px; padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="display: flex; justify-content: space-between; align-items: end; gap: var(--space-6); flex-wrap: wrap; margin-bottom: var(--space-8);">
+      <div>
+        <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Portfolio</span>
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0; max-width: 24ch;">First commitments, on both sides of the corridor.</h2>
+      </div>
+      <a href="Portfolio.dc.html" class="btn btn-secondary" style="text-decoration: none;">Portfolio &amp; pipeline →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(20px,3vw,40px);">
+      <sc-for list="{{ portfolio }}" as="co" hint-placeholder-count="2">
+        <a href="{{ co.url }}" target="_blank" rel="noopener" style="display: flex; flex-direction: column; background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); overflow: hidden; color: var(--color-text); text-decoration: none; box-shadow: var(--shadow-sm); transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-4px); box-shadow: var(--shadow-lg); text-decoration: none; color: var(--color-text);">
+          <div style="position: relative; height: 150px; background: {{ co.logoBg }}; display: grid; place-items: center; padding: 28px 40px;">
+            <img src="{{ co.logo }}" alt="{{ co.name }} logo" style="max-width: 100%; max-height: 94px; width: auto; height: auto; object-fit: contain; display: block;">
+            <span style="position: absolute; top: 20px; left: 20px; padding: 6px 14px; border-radius: 999px; background: var(--color-accent); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;">{{ co.stage }}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: var(--space-3); padding: clamp(24px,3vw,36px); flex: 1;">
+            <span style="font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700);">{{ co.origin }}</span>
+            <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(24px,2.4vw,30px); letter-spacing: -0.02em;">{{ co.name }}</h3>
+            <p style="margin: 0; font-size: 16px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 82%, transparent);">{{ co.desc }}</p>
+            <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2);">
+              <sc-for list="{{ co.sectors }}" as="t" hint-placeholder-count="3">
+                <span class="tag tag-neutral">{{ t }}</span>
+              </sc-for>
+            </div>
+            <div style="margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--color-divider); display: flex; justify-content: space-between; align-items: center; gap: var(--space-4);">
+              <span style="font-weight: 700; font-size: 15px; color: var(--color-accent-700);">Visit {{ co.domain }}</span>
+              <span style="width: 44px; height: 44px; border-radius: 50%; background: #13262c; display: grid; place-items: center; flex: none;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></span>
+            </div>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Ecosystem -->
+  <section id="ecosystem" data-screen-label="Ecosystem" style="scroll-margin-top: 96px; padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <h2 style="font-family: var(--font-heading); font-weight: 600; font-size: clamp(36px,4.4vw,60px); line-height: 1.08; letter-spacing: -0.035em; margin: 0;">Innovation Ecosystem</h2>
+    <div style="width: 72px; height: 2px; border-radius: 2px; background: var(--color-accent-400); margin: var(--space-6) 0;"></div>
+    <p style="margin: 0 0 clamp(32px,4vw,56px); font-size: 17px; line-height: 1.65; max-width: 56ch; color: color-mix(in srgb, var(--color-text) 80%, transparent);">Direct access to seed-stage founders inside India's top research institutions, and the European bodies that help them grow.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(20px,3vw,40px);">
+      <sc-for list="{{ ecosystem }}" as="it" hint-placeholder-count="5">
+        <a href="{{ it.url }}" target="_blank" rel="noopener" onMouseEnter="{{ it.enter }}" onMouseLeave="{{ leave }}" onFocus="{{ it.enter }}" onBlur="{{ leave }}" style="position: relative; display: block; min-height: 300px; border-radius: calc(2 * var(--radius-lg)); text-decoration: none; color: inherit; overflow: hidden; background: {{ it.bg }}; box-shadow: var(--shadow-sm); transition: background 0.25s ease;">
+          <sc-if value="{{ it.rest }}" hint-placeholder-val="{{ true }}">
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-6); padding: var(--space-8); text-align: center;">
+              <span style="position: absolute; top: 28px; right: 32px; width: 12px; height: 12px; border-radius: 50%; background: var(--color-accent);"></span>
+              <div style="width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--color-accent); display: grid; place-items: center; color: var(--color-accent);">
+                <sc-if value="{{ it.isEdu }}" hint-placeholder-val="{{ true }}"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg></sc-if>
+                <sc-if value="{{ it.isHub }}" hint-placeholder-val="{{ false }}"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></sc-if>
+                <sc-if value="{{ it.isOrg }}" hint-placeholder-val="{{ false }}"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg></sc-if>
+              </div>
+              <h3 style="margin: 0; font-size: clamp(20px,1.9vw,24px); font-weight: 700; letter-spacing: -0.02em; max-width: 18ch;">{{ it.name }}</h3>
+            </div>
+          </sc-if>
+          <sc-if value="{{ it.hover }}" hint-placeholder-val="{{ false }}">
+            <div style="position: absolute; inset: 0; display: flex; flex-direction: column; padding: clamp(24px,2.6vw,36px); color: #fff;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: var(--space-4);">
+                <span style="font-weight: 700; font-size: 15px;">{{ it.place }}</span>
+                <span style="width: 52px; height: 52px; border-radius: 50%; background: var(--color-accent); display: grid; place-items: center; flex: none;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></span>
+              </div>
+              <div style="margin-top: auto; display: flex; flex-direction: column; gap: var(--space-3);">
+                <h3 style="margin: 0; font-size: clamp(22px,2.2vw,28px); font-weight: 600; color: #fff;">{{ it.name }}</h3>
+                <p style="margin: 0; font-size: 15px; line-height: 1.6;">{{ it.desc }}</p>
+                <span style="font-weight: 700; font-size: 14px; margin-top: var(--space-2); color: var(--color-accent-300);">Visit {{ it.domain }} ↗</span>
+              </div>
+            </div>
+          </sc-if>
+        </a>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Footprint map -->
+  <section data-screen-label="Footprint" style="padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="background: var(--color-accent-2-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(28px,4vw,56px); display: flex; flex-direction: column; gap: var(--space-6);">
+      <div style="display: flex; justify-content: space-between; align-items: end; gap: var(--space-6); flex-wrap: wrap;">
+        <div>
+          <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-2-800); margin-bottom: var(--space-3);">Global footprint</span>
+          <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(28px,3vw,40px); line-height: 1.15; margin: 0; max-width: 24ch;">A Luxembourg headquarters, an on-ground presence across India.</h2>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.6; max-width: 34ch; color: var(--color-accent-2-900);">Five locations along the Europe–India corridor. Select a city to see what's there.</p>
+      </div>
+      <iframe src="footprint-map.html" title="Ovington office map" style="width: 100%; height: clamp(320px, 48vw, 520px); border: 0; display: block;"></iframe>
+    </div>
+  </section>
+
+  <!-- Team (unchanged) -->
+  <section id="team" data-screen-label="Team" style="scroll-margin-top: 96px; padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Team</span>
+    <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0 0 var(--space-8); max-width: 24ch;">European institutional depth, Indian market fluency.</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: var(--space-8) var(--space-6); align-items: start;">
+      <sc-for list="{{ team }}" as="p" hint-placeholder-count="5">
+        <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+          <div class="washed" style="width: 100%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; max-width: 240px;">
+            <image-slot id="{{ p.slot }}" shape="circle" src="{{ p.photo }}" placeholder="Portrait"></image-slot>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 24px; margin: var(--space-2) 0 var(--space-1);">{{ p.name }}</h3>
+            <span style="font-size: 14px; font-weight: 600; color: var(--color-accent-2-700);">{{ p.role }}</span>
+          </div>
+          <sc-if value="{{ p.open }}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 82%, transparent);">{{ p.bio }}</p>
+          </sc-if>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <button type="button" class="btn btn-secondary" onClick="{{ p.toggle }}">{{ p.toggleLabel }}</button>
+            <a href="{{ p.linkedin }}" target="_blank" class="btn btn-ghost" style="text-decoration: none;">LinkedIn ↗</a>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section id="insights" data-screen-label="Insights" style="scroll-margin-top: 96px; padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="display: flex; justify-content: space-between; align-items: end; gap: var(--space-6); flex-wrap: wrap; margin-bottom: var(--space-8);">
+      <div>
+        <span style="display: block; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; color: var(--color-accent-700); margin-bottom: var(--space-3);">Insights</span>
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(28px,3vw,40px); line-height: 1.15; margin: 0; max-width: 26ch;">Perspectives on European capital, Indian innovation, and the corridor between them.</h2>
+      </div>
+      <a href="#" class="btn btn-secondary" style="text-decoration: none;">View all →</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: clamp(20px,3vw,40px); align-items: stretch;">
+      <a href="#" style="display: flex; flex-direction: column; gap: var(--space-4); min-height: 420px; padding: clamp(28px,3.4vw,48px); border-radius: calc(2 * var(--radius-lg)); background: #13262c; color: #fff; text-decoration: none; box-shadow: var(--shadow-sm); transition: transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform: translateY(-4px); box-shadow: var(--shadow-lg); color: #fff; text-decoration: none;">
+        <div style="display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap;">
+          <span style="padding: 6px 14px; border-radius: 999px; background: var(--color-accent); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;">Latest</span>
+          <span style="font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.8);">{{ featured.date }}</span>
+        </div>
+        <h3 style="margin: auto 0 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(28px,3vw,40px); line-height: 1.12; letter-spacing: -0.03em; color: #fff; max-width: 20ch;">{{ featured.title }}</h3>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; color: rgba(255,255,255,0.86); max-width: 46ch;">{{ featured.desc }}</p>
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); padding-top: var(--space-4); margin-top: var(--space-2); border-top: 1px solid rgba(255,255,255,0.18);">
+          <span style="font-size: 14px; color: rgba(255,255,255,0.8);">By OCP Research</span>
+          <span style="width: 48px; height: 48px; border-radius: 50%; background: var(--color-accent); display: grid; place-items: center; flex: none; transition: background 0.25s ease, transform 0.25s ease;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></span>
+        </div>
+      </a>
+      <div style="display: flex; flex-direction: column; gap: clamp(20px,3vw,40px);">
+        <sc-for list="{{ moreInsights }}" as="a" hint-placeholder-count="2">
+          <a href="#" style="flex: 1; display: flex; flex-direction: column; gap: var(--space-3); padding: clamp(24px,2.8vw,36px); border-radius: calc(2 * var(--radius-lg)); background: var(--color-surface); color: var(--color-text); text-decoration: none; box-shadow: var(--shadow-sm); border: 2px solid transparent; transition: border-color 0.25s ease, box-shadow 0.25s ease;" style-hover="border-color: var(--color-accent); box-shadow: var(--shadow-md); color: var(--color-text); text-decoration: none;">
+            <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-accent-700);">{{ a.date }}</span>
+            <h3 style="margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: clamp(20px,1.9vw,24px); line-height: 1.2; letter-spacing: -0.02em;">{{ a.title }}</h3>
+            <p style="margin: 0; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 80%, transparent);">{{ a.desc }}</p>
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: var(--space-4); margin-top: auto; padding-top: var(--space-3);">
+              <span style="font-size: 14px; color: color-mix(in srgb, var(--color-text) 72%, transparent);">By OCP Research</span>
+              <span style="width: 48px; height: 48px; border-radius: 50%; background: #13262c; display: grid; place-items: center; flex: none; transition: background 0.25s ease, transform 0.25s ease;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></span>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-screen-label="Contact" style="scroll-margin-top: 96px; padding: clamp(56px,7vw,96px) 0 var(--space-8);">
+    <div style="background: var(--color-accent-100); border-radius: calc(2 * var(--radius-lg)); padding: clamp(32px,5vw,64px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: clamp(32px,5vw,64px);">
+      <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+        <h2 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: clamp(30px,3.4vw,44px); line-height: 1.15; margin: 0;">Talk to our team.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; max-width: 40ch;">For investors, industrial partners and founders. Information on the holding is shared on a confidential basis.</p>
+        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: var(--space-3);">
+          <span class="card-kicker">Email us</span>
+          <a href="mailto:info@ovingtoncap.ai" style="font-size: 18px; font-weight: 600;">info@ovingtoncap.ai</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+          <span class="card-kicker">Domicile</span>
+          <span style="font-size: 16px;">53 Boulevard Royal, L-2449 Luxembourg</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+          <span class="card-kicker">Advisory</span>
+          <span style="font-size: 16px;">Algram Labs Pvt. Ltd. · Mumbai, Chennai &amp; Hyderabad</span>
+        </div>
+      </div>
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <div style="background: var(--color-surface); border-radius: calc(2 * var(--radius-lg)); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-3); justify-content: center;">
+          <h3 style="font-family: var(--font-heading); font-weight: var(--font-heading-weight); font-size: 26px; margin: 0;">Thank you.</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6;">Your message is on its way. We'll be in touch shortly.</p>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ onSubmit }}" style="display: flex; flex-direction: column; gap: var(--space-4);">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: var(--space-4);">
+            <div class="field"><label>Name</label><input class="input" type="text" required="required"></div>
+            <div class="field"><label>Email</label><input class="input" type="email" required="required"></div>
+          </div>
+          <div class="field">
+            <label>I am a</label>
+            <div class="seg" style="align-self: flex-start;">
+              <label class="seg-opt"><input type="radio" name="who" value="investor" checked="checked">Investor</label>
+              <label class="seg-opt"><input type="radio" name="who" value="partner">Industrial partner</label>
+              <label class="seg-opt"><input type="radio" name="who" value="founder">Founder</label>
+            </div>
+          </div>
+          <div class="field"><label>Message</label><textarea class="input" rows="5" style="border-radius: var(--radius-lg); resize: vertical; font: inherit;"></textarea></div>
+          <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send message</button>
+        </form>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer style="padding: var(--space-8) 0; display: flex; flex-direction: column; gap: var(--space-4); font-size: 13px; line-height: 1.6; color: color-mix(in srgb, var(--color-text) 72%, transparent);">
+    <div style="display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; align-items: baseline;">
+      <img src="assets/ovington-logo-black.png" alt="Ovington Capital Partners" style="height: 28px; width: auto;">
+      <span>Copyright © 2026 Ovington Capital Partners. All rights reserved.</span>
+    </div>
+    <p style="margin: 0; max-width: 90ch;">This website does not constitute an offer to sell or a solicitation of an offer to subscribe to any securities or investment products. Any investment in Ovington Capital Partners is subject to comprehensive due diligence, definitive subscription documentation, and applicable regulatory approval under Luxembourg law.</p>
+  </footer>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;bios&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;collapsed&quot;,&quot;expanded&quot;],&quot;default&quot;:&quot;collapsed&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._goHash = (hash) => { const el = hash && hash.length > 1 && document.getElementById(hash.slice(1)); if (!el) return false; window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 88, behavior: 'smooth' }); return true; };
+    this._onNavClick = (e) => { const a = e.target.closest && e.target.closest('a[href]'); if (!a) return; const href = a.getAttribute('href'); const i = href.indexOf('#'); if (i < 0) return; const page = href.slice(0, i); if (page && !location.pathname.endsWith(decodeURIComponent(page))) return; if (this._goHash(href.slice(i))) { e.preventDefault(); history.replaceState(null, '', href.slice(i)); } };
+    document.addEventListener('click', this._onNavClick);
+    if (location.hash) {
+      const jump = () => { const el = document.getElementById(location.hash.slice(1)); if (!el) return null; const top = el.getBoundingClientRect().top; if (Math.abs(top - 88) > 4) window.scrollTo({ top: top + window.scrollY - 88, behavior: 'auto' }); return top; };
+      let tries = 0, stable = 0; const t = setInterval(() => { const top = jump(); stable = top !== null && Math.abs(top - 88) <= 4 ? stable + 1 : 0; if (stable >= 5 || ++tries > 60) clearInterval(t); }, 100);
+      window.addEventListener('load', jump, { once: true });
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(jump);
+    } this._onScroll = () => { const s = window.scrollY > 24; if (s !== !!this.state.scrolled) this.setState({ scrolled: s }); }; window.addEventListener('scroll', this._onScroll, { passive: true }); this._onScroll(); }
+  componentWillUnmount() { document.removeEventListener('click', this._onNavClick); window.removeEventListener('scroll', this._onScroll); }
+
+  state = { open: {}, sent: false, who: 'Investor' };
+  renderVals() {
+    const img = 'https://highwebsolutions.com/ovington-capital/images/';
+    const expanded = this.props.bios === 'expanded';
+    const team = [
+      ['Marco Palacino','Managing Director','team-01','https://www.linkedin.com/in/marco-palacino-4715681a/',"Marco brings over thirty years of experience across asset management, private credit, real estate, and venture capital. He previously served as Country Head for Italy at BNY Mellon Investment Management, where he led institutional client relationships and product development across Southern Europe. His career has spanned senior roles at global asset managers, private banks, and alternative investment firms, giving him a rare view across the full spectrum of European institutional capital."],
+      ['Himanshu Upadhyay','Director, Luxembourg','assets/team-himanshu.png','https://www.linkedin.com/in/himanshu1512/',"Himanshu brings more than twenty years of leadership experience across insurance, financial services, strategy, product, and risk management, spanning Europe and Asia-Pacific. He currently holds a senior leadership role at Foyer Group, one of Luxembourg's largest financial institutions, where he has led cross-border initiatives, product innovation, and enterprise risk. His combination of European institutional depth and Asian market fluency is central to Ovington's positioning at the Europe–India corridor."],
+      ['Pranjul Shah','Director, Luxembourg','team-03','https://www.linkedin.com/in/pranjulshah/',"Pranjul serves as Head of Incubator at the University of Luxembourg and is a faculty member of the MIT LinQ Catalyst Program. He is a central architect of Luxembourg's entrepreneurship acceleration ecosystem and has advised founders, universities, and government bodies across Europe on deep-tech commercialisation. At Ovington, Pranjul anchors the firm's innovation ecosystem strategy and its academic and research partnerships."],
+      ['Elisabetta Luppi','Director & Senior Corporate Officer','team-04','https://www.linkedin.com/in/elisabetta-luppi-371140335/',"Elisabetta brings deep expertise in business administration, corporate affairs, and compliance, developed over a career spanning Luxembourg's regulated financial services sector. She serves as the operational and governance backbone of the firm, overseeing regulatory alignment, corporate secretarial function, and the institutional standards that define a Luxembourg investment house."],
+      ['Maheep Sidhu','Investment Analyst','team-05','https://www.linkedin.com/in/maheep-sidhu-5a7578160/',"Maheep leads investment analysis and business development at Ovington, with a focus on deal sourcing, valuation, and investor relations across the Europe–India corridor. He brings experience across financial consulting, wealth management research at BGL BNP Paribas, and cross-border venture capital. He works closely with India's leading innovation ecosystems, including SINE at IIT Bombay, to build the firm's proprietary deal pipeline."]
+    ].map(([name, role, f, linkedin, bio], i) => {
+      const open = expanded || !!this.state.open[i];
+      return { name, role, linkedin, bio, open, slot: 'team-' + i, photo: f.includes('/') ? f : img + 'team/' + f + '.jpg',
+        toggleLabel: open ? 'Hide bio' : 'Read bio',
+        toggle: () => this.setState(s => ({ open: { ...s.open, [i]: !open } })) };
+    });
+    const layout = this.props.comparison ?? 'cards';
+    const card = (k, light) => { const on = this.state.hov === k; return { rest: !on, hover: on, bg: on ? '#13262c' : 'var(--color-surface)', enter: () => this.setState({ hov: k }) }; };
+    return { navBg: this.state && this.state.scrolled ? 'color-mix(in srgb, #f2efea 86%, transparent)' : 'transparent', navShadow: this.state && this.state.scrolled ? '0 1px 0 color-mix(in srgb, #13262c 10%, transparent), 0 8px 24px -12px color-mix(in srgb, #13262c 28%, transparent)' : 'none', navPad: this.state && this.state.scrolled ? '10px' : '18px', 
+      showHeroImage: this.props.heroImage ?? true,
+      priv: card('priv'), pub: card('pub'), leave: () => this.setState({ hov: null }),
+      isCards: layout === 'cards',
+      isTable: layout === 'table',
+      rows: [
+        { label: 'Allocation', pub: '~80% of the holding (flexible)', priv: '~20% of the holding (flexible)' },
+        { label: 'What it holds', pub: 'Indian-listed companies with domestic and global growth potential', priv: 'Seed to pre-IPO companies led by India-linked or Indian-origin founders' },
+        { label: 'Sector focus', pub: 'Companies linked to the industrialization and electrification themes', priv: 'Advanced manufacturing & strategic tech, health tech, climate tech, AI applications & enterprise software' },
+        { label: 'Strategy', pub: 'Long-only, unhedged, semi-activist buy & hold, with a preference for high-quality mid-caps', priv: 'Seed to Series A today, prepared to invest up to the pre-IPO stage as relationships build' },
+        { label: 'Portfolio', pub: '10–12 holdings: 6–8 core positions plus satellites', priv: '8–10 companies, indicative initial checks of €300K–€400K with follow-on capacity' },
+        { label: 'Access', pub: 'SEBI Category II Foreign Portfolio Investor, direct access to the NSE and BSE', priv: 'Sourced through Ovington Advisory across Mumbai, Chennai and Hyderabad' },
+        { label: 'Role for investors', pub: 'Risk-conscious returns and liquidity for shareholders', priv: 'Asymmetric upside, judged on realized cash returns rather than mark-ups' }
+      ],
+      value: [
+        { n: '1', title: 'Cross-border positioning', body: "Helping Indian and Indian-origin founders access European capital, customers, regulatory knowledge and corporate partners." },
+        { n: '2', title: 'Operating network', body: 'Access to Indian-origin executives, operators, founders and domain experts across technology, finance, healthcare and enterprise.' },
+        { n: '3', title: 'Europe expansion engine', body: 'Luxembourg-anchored support for portfolio companies entering EU markets.' },
+        { n: '4', title: 'Listed-market intelligence', body: 'Public-market signals inform private-market valuation, timing and sector conviction.' }
+      ],
+      team,
+      portfolio: [
+        { name: 'Plenome Technologies', stage: 'Seed', origin: 'India-domiciled', sectors: ['Healthcare IT', 'Distributed systems', 'AI'], url: 'https://plenome.com/', domain: 'plenome.com', logo: 'assets/plenome-logo.png', logoBg: '#ffffff',
+          desc: 'IIT Madras-incubated. Builds secure, intelligent digital infrastructure for healthcare and e-governance. Ovington led the seed round.' },
+        { name: 'Coalition Systems', stage: 'Pre-seed', origin: 'Indian global talent', sectors: ['Defence tech', 'Secure collaboration', 'Dual-use'], url: 'https://coalition.systems/', domain: 'coalition.systems', logo: 'assets/coalition-logo.png', logoBg: '#000000',
+          desc: 'San Francisco-based defence software company building secure collaboration infrastructure for governments, militaries and alliance organizations. Backed by a16z Speedrun.' }
+      ],
+      ecosystem: [
+        ['SINE, IIT Bombay', 'Mumbai', 'https://www.sineiitb.org/', 'sineiitb.org', 'edu', "The Society for Innovation and Entrepreneurship at IIT Bombay, Western India's leading accelerator."],
+        ['IIT Madras Research Park', 'Chennai', 'https://respark.iitm.ac.in/', 'respark.iitm.ac.in', 'edu', "India's deep-science and engineering corridor, where portfolio company Plenome was incubated."],
+        ['T-Hub', 'Hyderabad', 'https://t-hub.co/', 't-hub.co', 'hub', "India's largest innovation campus, connecting startups with corporates, investors and government."],
+        ['University of Luxembourg', 'Luxembourg', 'https://www.uni.lu/', 'uni.lu', 'edu', "Home to the university incubator and Luxembourg's entrepreneurship acceleration ecosystem."],
+        ['Indian Business Chamber of Luxembourg (IBCL)', 'Luxembourg · India', 'https://ibcl.lu/', 'ibcl.lu', 'org', 'A bilateral chamber fostering trade, finance and business relationships between India and Luxembourg.']
+      ].map(([name, place, url, domain, kind, desc], i) => { const on = this.state.hov === 'eco' + i; return { name, place, url, domain, desc, isEdu: kind === 'edu', isHub: kind === 'hub', isOrg: kind === 'org', rest: !on, hover: on, bg: on ? '#13262c' : 'var(--color-surface)', enter: () => this.setState({ hov: 'eco' + i }) }; }),
+      featured: [
+        { date: 'September 2026', title: 'Luxembourg as a Gateway to Indian Innovation', desc: 'How Luxembourg can serve as a strategic bridge between Indian innovation and European capital, institutions, and markets.' },
+        { date: 'June 2026', title: 'The Indian IPO Market Comes of Age', desc: "India's public markets are entering a more mature phase. What does that mean for companies, investors, and international capital?" },
+        { date: 'March 2026', title: 'The Case for Cross-Border Venture in the Current Cycle', desc: 'As venture capital becomes more selective, disciplined cross-border investing may offer a distinctive route to opportunity.' }
+      ][0],
+      moreInsights: [
+        { date: 'September 2026', title: 'Luxembourg as a Gateway to Indian Innovation', desc: 'How Luxembourg can serve as a strategic bridge between Indian innovation and European capital, institutions, and markets.' },
+        { date: 'June 2026', title: 'The Indian IPO Market Comes of Age', desc: "India's public markets are entering a more mature phase. What does that mean for companies, investors, and international capital?" },
+        { date: 'March 2026', title: 'The Case for Cross-Border Venture in the Current Cycle', desc: 'As venture capital becomes more selective, disciplined cross-border investing may offer a distinctive route to opportunity.' }
+      ].slice(1),
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      onSubmit: e => { e.preventDefault(); this.setState({ sent: true }); }
+    };
+  }
+}
+</script>
+</body>
+</html>
